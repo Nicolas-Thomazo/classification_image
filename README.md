@@ -9,4 +9,23 @@ Nous avons 4435 valeurs dans le training set et 2000 dans le testing set.
 
 Sur le schéma ci-dessous j'ai représenté 1 ligne du dataframe. La ligne répresente en fait 1 pixel (rouge) qu'on cherche à prédire, ainsi que ces voisins. Comme on peut le voir les pixels sont mis à la ligne les uns a la suite des autres, et chaque pixels est représenté par 4 valeurs entre 0 et 255.
 
-![Getting Started](pixels.png)
+![Getting Started](img/pixels.png)
+
+#Pour simplifier l'experience utilisateur, nous avons utilisé le modèle qui utilise uniquement les valeurs du pixel 5 pour prédire la classe. L'utilisateur rentre 4 pixels au lieu de 36. Ce modèle est un petit peu moins performant mais donne des resultats suffisants.
+
+
+## 2. Mode d'emploi
+
+Aller dans le repertoire flask et lancer la commande
+- python app.py
+
+Sur la page web vous pouvez voir 4 champs 
+- Pixel 1
+- Pixel 2
+- Pixel 3
+- Pixel 4
+
+remplissez les champs avec les valeurs de pixels dont vous souhaitez connaitre la classe.
+
+Appuyez sur le bouton prédiction, vous obtiendrez la classe du pixel, et la probabilité qu'il appartienne à cette classe.
+

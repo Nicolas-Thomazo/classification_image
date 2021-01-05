@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Prédiction de la classe d'un pixel</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	  <input type="text" name="pixel1" placeholder="Pixel 1" required="required" />
+        <input type="text" name="pixel2" placeholder="Pixel 2" required="required" />
+        <input type="text" name="pixel3" placeholder="Pixel 3" required="required" />
+        <input type="text" name="pixel4" placeholder="Pixel 4" required="required" />
+        
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   
+
+
+
+   <div class ="test2">
+    <form action="{{ url_for('predict2')}}" methode = "post">
+      <label for="cars">Chosir une ligne non testé:</label>
+      <select name="cars" id="cars">
+        <option value="volvo">[1,1,1,1]</option>
+        <option value="saab">[1,1,1,1]</option>
+        <option value="opel">[1,1,1,1]</option>
+        <option value="audi">[1,1,1,1]</option>
+      </select>
+      <br><br>
+      <button type="submit" value="Submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+
+    <br>
+    {{ prediction_text }}
+  </div>
+ </div>
+
+
+</body>
+</html>
