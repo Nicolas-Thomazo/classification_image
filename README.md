@@ -29,3 +29,6 @@ remplissez les champs avec les valeurs de pixels dont vous souhaitez connaitre l
 
 Appuyez sur le bouton prédiction, vous obtiendrez la classe du pixel, et la probabilité qu'il appartienne à cette classe.
 
+![Exemple](img/exemple.png)
+
+
