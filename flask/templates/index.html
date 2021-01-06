@@ -27,25 +27,6 @@
     </form>
 
    <br>
-   <br>
-   
-
-
-
-   <div class ="test2">
-    <form action="{{ url_for('predict2')}}" methode = "post">
-      <label for="cars">Chosir une ligne non testé:</label>
-      <select name="cars" id="cars">
-        <option value="volvo">[1,1,1,1]</option>
-        <option value="saab">[1,1,1,1]</option>
-        <option value="opel">[1,1,1,1]</option>
-        <option value="audi">[1,1,1,1]</option>
-      </select>
-      <br><br>
-      <button type="submit" value="Submit" class="btn btn-primary btn-block btn-large">Predict</button>
-    </form>
-
-
     <br>
     {{ prediction_text }}
   </div>
@@ -54,3 +35,4 @@
 
 </body>
 </html>
+

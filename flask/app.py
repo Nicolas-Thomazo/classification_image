@@ -44,8 +44,8 @@ def predict():
 
     return render_template('index.html', prediction_text=f'Le pixel correspond à {classe} (classe {output}) avec un probabilité de {max_proba}')
 
-def predict2():
-    return "ok"
+#def predict2():
+ #   return "ok"
 
 @app.route('/predict_api',methods=['POST'])
 def ppp():
