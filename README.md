@@ -3,7 +3,7 @@
 - La base de donnée consiste a des  valeurs multi spectrale de pixels dans une image satellite. La classe à prédire et le pixel central dans chaque groupe de voisins. La classe à prédire à été transformé et pour des raisons de facilité à des valeurs entre 1 et 7.
 Nous avons 4435 valeurs dans le training set et 2000 dans le testing set.
 
-- Chaque image prise par le satellite landsat consiste en 4 différentes images de la meme scène mais prise dans des valeurs spectrales différentes (2 dans le domaine du visible et 2 dans l'infrarouge). Chaque image à une résolution de 2340 x 3380 
+- Chaque image prise par le satellite landsat consiste en 4 différentes images de la meme scène mais prise dans des valeurs spectrales différentes (2 dans le domaine du visible et 2 dans l'infrarouge). C’est pour cela que chaque case du tableau correspond à 4 valeurs de pixels et donc on a 36 valeurs de pixels dans chaque ligne.
 
 - Dans notre dataset, on à une petite partie de l'image (82 x 100 pixels) 
 
