@@ -12,10 +12,9 @@ Sur le schéma ci-dessous j'ai représenté 1 ligne du dataframe. La ligne répr
 ![Getting Started](img/pixels.png)
 
 
----
-**NOTE**
+--
 Pour simplifier l'experience utilisateur, nous avons utilisé le modèle qui utilise uniquement les valeurs du pixel 5 pour prédire la classe. L'utilisateur rentre 4 pixels au lieu de 36. Ce modèle est un petit peu moins performant mais donne des resultats suffisants.
----
+--
 
 ## 2. Mode d'emploi
 
